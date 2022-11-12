@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>EgyCandy &#127841;</title>
+        <title>EgyCandy</title>
       </Head>
 
     </div>
