@@ -1,10 +1,18 @@
 import React from 'react'
-import {VStack} from '@chakra-ui/react'
+import {VStack,Container} from '@chakra-ui/react'
+import NavBar from './Utils/NavBar';
 
-const Layout = () => {
+export interface LayoutProps {
+    children: JSX.Element | JSX.Element[];
+  }
+
+const Layout = ({children:LayoutProps}) => {
   return (
     <VStack>
-
+        <NavBar/>
+        <Container maxW={ xl:'container.xl' , }>
+            {children}
+        </Container>
     </VStack>
   )
 }
