@@ -6,12 +6,12 @@ export interface LayoutProps {
     children: JSX.Element | JSX.Element[];
   }
 
-const Layout = ({children:LayoutProps}) => {
+const Layout = (props:LayoutProps) => {
   return (
     <VStack>
         <NavBar/>
-        <Container maxW={ xl:'container.xl' , }>
-            {children}
+        <Container>
+            {props.children}
         </Container>
     </VStack>
   )
