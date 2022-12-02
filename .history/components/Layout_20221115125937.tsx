@@ -2,7 +2,7 @@ import { Container, IconButton, useColorMode, VStack } from "@chakra-ui/react";
 import Head from "next/head";
 import NavBar from "./Utils/NavBar";
 import Offers from "./Utils/Offers";
-import { FaSun, FaMoon } from "react-icons/fa";
+import {FaSun , FaMoon } from 'react-icons/fa'
 
 export interface LayoutProps {
   children: JSX.Element | JSX.Element[];
@@ -10,28 +10,18 @@ export interface LayoutProps {
 }
 
 const Layout = (props: LayoutProps) => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
-  const isDark = colorMode === "dark";
-
+ const {colorMode , toggleColorMode} = useColorMode()
+ const isDark = colorMode === 'dark'
   return (
-    <VStack spacing={"20px"}>
+    <VStack spacing={'20px'}>
       <Head>
         <title>{props.pageTitle}</title>
       </Head>
-      <Offers />
+      <Offers/>
 
-      <NavBar />
-      <Container
-        maxW={{
-          xl: "container.xl",
-          lg: "container.lg",
-          md: "container.md",
-          sm: "container.sm",
-          base: "400px",
-        }}
-      >
-        {props.children}
+      <NavBar/>
+      <Container maxW={{xl:'container.xl' , lg:'container.lg' , md:'container.md' ,sm:'container.sm', base:'400px'}}>
+      {props.children}
       </Container>
     </VStack>
   );

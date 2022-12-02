@@ -1,12 +1,11 @@
-
+import { Text } from '@chakra-ui/react'
 import type { NextPage } from 'next'
-
-import Layout from '../components/Layout'
-import TitleBar from '../components/Utils/TitleBar'
-import SliderImage from '../components/Home/SliderImage'
-import ProductGrid from '../components/product/ProductGrid'
-import AdvantgesGrid from '../components/Home/AdvantgesGrid'
 import CategoryGrid from '../components/Category/CategoryGrid'
+import AdvantgesGrid from '../components/Home/AdvantgesGrid'
+import SliderImage from '../components/Home/SliderImage'
+import Layout from '../components/Layout'
+import ProductGrid from '../components/product/ProductGrid'
+import TitleBar from '../components/Utils/TitleBar'
 
 const Home: NextPage = () => {
   return (
