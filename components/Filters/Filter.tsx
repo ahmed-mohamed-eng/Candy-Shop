@@ -22,7 +22,7 @@ const Filter = () => {
       <Text as="button" onClick={onOpen}>
         Filter
       </Text>
-      <Modal isOpen={isOpen} onClose={onClose} size='xs'>
+      <Modal isOpen={isOpen} onClose={onClose} size='xs' isCentered>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Filter</ModalHeader>

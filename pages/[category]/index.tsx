@@ -4,6 +4,7 @@ import { Heading } from "@chakra-ui/react";
 
 import Layout from "../../components/Layout";
 import Filters from "../../components/Filters";
+import ProductGrid from "../../components/product/ProductGrid";
 
 const Category = () => {
   return (
@@ -12,6 +13,7 @@ const Category = () => {
         Products
       </Heading>
       <Filters />
+      <ProductGrid name="Christmas Gift" />
     </Layout>
   );
 };
