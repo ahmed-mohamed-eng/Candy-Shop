@@ -1,10 +1,17 @@
 import { Container, useColorMode, VStack } from "@chakra-ui/react";
 
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+} from '@chakra-ui/react';
 
 import Head from "next/head";
 import NavBar from "./Utils/NavBar";
 import Offers from "./Utils/Offers";
+
+
 
 export interface LayoutProps {
   children: JSX.Element | JSX.Element[];
@@ -24,21 +31,11 @@ const Layout = (props: LayoutProps) => {
       </Head>
       <Offers />
       <NavBar />
-      <Breadcrumb w="full" px="5">
-        {props.urlPaths
-          ? props.urlPaths.map((path, idx) => {
-              return (
-                <BreadcrumbItem key={idx + "323AAA323"}>
-                  <BreadcrumbLink
-                    href={idx === 0 ? "/" : "/" + path.toLocaleLowerCase()}
-                  >
-                    {idx === 0 ? "Home" : path}
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-              );
-            })
-          : null}
-      </Breadcrumb>
+      {props.urlPaths ? props.urlPaths.map((path) => {
+        return (
+
+        )
+      }) : null}
       <Container
         maxW={{
           xl: "container.xl",

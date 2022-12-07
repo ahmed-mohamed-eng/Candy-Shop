@@ -24,15 +24,13 @@ const Layout = (props: LayoutProps) => {
       </Head>
       <Offers />
       <NavBar />
-      <Breadcrumb w="full" px="5">
+      <Breadcrumb>
         {props.urlPaths
           ? props.urlPaths.map((path, idx) => {
               return (
                 <BreadcrumbItem key={idx + "323AAA323"}>
-                  <BreadcrumbLink
-                    href={idx === 0 ? "/" : "/" + path.toLocaleLowerCase()}
-                  >
-                    {idx === 0 ? "Home" : path}
+                  <BreadcrumbLink href={path.toLocaleLowerCase()}>
+                    {path}
                   </BreadcrumbLink>
                 </BreadcrumbItem>
               );

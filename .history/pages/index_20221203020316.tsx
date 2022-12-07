@@ -6,10 +6,11 @@ import SliderImage from "../components/Home/SliderImage";
 import ProductGrid from "../components/product/ProductGrid";
 import AdvantgesGrid from "../components/Home/AdvantgesGrid";
 import CategoryGrid from "../components/Category/CategoryGrid";
+import Offers from "../components/Utils/Offers";
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout pageTitle="EgyCandy &#127841;">
       <SliderImage />
       <AdvantgesGrid />
       <TitleBar name="Category" buttonTitle="more" />

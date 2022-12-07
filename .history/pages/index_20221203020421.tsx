@@ -9,7 +9,7 @@ import CategoryGrid from "../components/Category/CategoryGrid";
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout pageTitle="EgyCandy &#127841;">
       <SliderImage />
       <AdvantgesGrid />
       <TitleBar name="Category" buttonTitle="more" />

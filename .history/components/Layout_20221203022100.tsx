@@ -24,7 +24,7 @@ const Layout = (props: LayoutProps) => {
       </Head>
       <Offers />
       <NavBar />
-      <Breadcrumb w="full" px="5">
+      <Breadcrumb>
         {props.urlPaths
           ? props.urlPaths.map((path, idx) => {
               return (
