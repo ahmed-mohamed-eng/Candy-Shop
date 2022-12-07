@@ -5,6 +5,8 @@ import { Heading } from "@chakra-ui/react";
 import Layout from "../../components/Layout";
 import Filters from "../../components/Filters";
 import ProductGrid from "../../components/product/ProductGrid";
+import Pagination from "../../components/Utils/Pagination";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Category = () => {
   return (
@@ -14,6 +16,7 @@ const Category = () => {
       </Heading>
       <Filters />
       <ProductGrid name="Christmas Gift" />
+      <Pagination/>
     </Layout>
   );
 };
